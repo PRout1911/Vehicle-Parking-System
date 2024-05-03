@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background: hsla(211, 66%, 87%, 1);
+            background: linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+            background: -moz-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+            background: -webkit-linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C9DEF4", endColorstr="#F5CCD4", GradientType=1 );
+            display: block;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+
+        #registration-form {
+            flex: 1;
+            padding-left: 40px;
+        }
+
+        #registration-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #registration-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        #registration-form input[type="text"],
+        #registration-form input[type="email"],
+        #registration-form input[type="password"],
+        #registration-form input[type="submit"],
+        #registration-form input[type="reset"] {
+           width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        #registration-form input[type="submit"] {
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #registration-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        #registration-form input[type="reset"]{
+            background-color: #069e03;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+        #registration-form input[type="reset"]:hover{
+            background-color: #034211;
+        }
+        .images {
+            flex: 1;
+            background-image: url("registration.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .container1{
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 800px;
+        }
+        #welcome{
+            width: 100vw;
+            height: 100vh; 
+            position: absolute;
+            background-image: url("welcome.jpg");
+            background-size: cover;
+            filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+        }
+        .container1 .content{
+            padding-top: 20px;
+            text-align: center;
+            margin: 0 auto;
+            top: 30%;
+            left: 25%;
+            position: absolute;
+            z-index: 1;
+            width: 700px;
+            height: 200px;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div id="welcome">
+        </div>
+        <div class="content">
+            <h1>Hey!<br>Welcome to my Vehicle Parking System.</h1>
+            <a href="#registration-form">Don't have an account? Register here</a>
+        </div>
+    </div>
+    <div class="container">
+        <div id="registration-form">
+            <h2>User Registration</h2>
+            <form action="register_user.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+            </form>
+        </div>
+        <div class="images"></div>
+    </div>
+</body>
+</html>
