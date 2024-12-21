@@ -5,8 +5,4 @@ Connect with me 🔗💕:
 
 Welcome to my profile! Check out my LinkedIn:
 
-![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/yourprofile)
-
-Or visit my LinkedIn:
-
-[![LinkedIn Logo](https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo_2023.svg)](https://www.linkedin.com/in/yourprofile)
+![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin&logoColor=white&link=www.linkedin.com/in/priyanka-rout-350914293)
